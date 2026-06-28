@@ -1,5 +1,5 @@
 
-# 🧠 RAG System (FAISS + Groq LLaMA) with Cloud Observability & Cost-Aware LLM Serving
+# 🧠 RAG System with Cloud Observability & Cost-Aware LLM Serving
 
 A **production-style Retrieval-Augmented Generation (RAG) system** built with a clear separation between **offline data processing** and **online inference**, designed to run on **free / low-cost cloud resources**.
 
