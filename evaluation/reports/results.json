@@ -1,0 +1,431 @@
+{
+  "final_metrics": {
+    "recall@5": 1.0,
+    "recall@10": 1.0,
+    "mrr@5": 1.0,
+    "mrr@10": 1.0,
+    "num_queries": 60
+  },
+  "per_query": [
+    {
+      "query": "What is RAG?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain FAISS",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector search?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "How does embedding work?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is cosine similarity?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain semantic search",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is LLM latency?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is retrieval augmented generation?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain sentence transformers",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector database?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is RAG?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain FAISS",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector search?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "How does embedding work?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is cosine similarity?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain semantic search",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is LLM latency?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is retrieval augmented generation?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain sentence transformers",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector database?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is RAG?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain FAISS",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector search?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "How does embedding work?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is cosine similarity?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain semantic search",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is LLM latency?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is retrieval augmented generation?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain sentence transformers",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector database?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is RAG?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain FAISS",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector search?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "How does embedding work?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is cosine similarity?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain semantic search",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is LLM latency?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is retrieval augmented generation?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain sentence transformers",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector database?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is RAG?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain FAISS",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector search?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "How does embedding work?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is cosine similarity?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain semantic search",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is LLM latency?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is retrieval augmented generation?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain sentence transformers",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector database?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is RAG?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain FAISS",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector search?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "How does embedding work?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is cosine similarity?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain semantic search",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is LLM latency?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is retrieval augmented generation?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Explain sentence transformers",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What is vector database?",
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    }
+  ]
+}

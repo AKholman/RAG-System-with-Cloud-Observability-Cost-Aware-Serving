@@ -1,0 +1,12 @@
+[
+  {"query": "how does attention mechanism work in transformer models and why is it better than RNNs?"},
+  {"query": "what are the trade-offs between vector search and keyword search in information retrieval systems?"},
+  {"query": "how does AWS Lambda handle scaling under high request traffic?"},
+  {"query": "explain the difference between supervised, unsupervised, and self-supervised learning with examples"},
+  {"query": "what causes hallucinations in large language models and how can they be reduced?"},
+  {"query": "how does cosine similarity work for text embeddings and why is it widely used?"},
+  {"query": "what are common failure modes in retrieval augmented generation (RAG) systems?"},
+  {"query": "how does batch normalization improve training stability in deep neural networks?"},
+  {"query": "what are the key differences between SQL and NoSQL databases and when should each be used?"},
+  {"query": "how do recommendation systems like YouTube or Netflix rank and personalize content?"}
+]
