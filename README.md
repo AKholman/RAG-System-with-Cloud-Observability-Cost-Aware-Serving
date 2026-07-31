@@ -1,7 +1,7 @@
 
 # 🧠 RAG System with Cloud Observability & Cost-Aware LLM Serving
 
-A **production-style Retrieval-Augmented Generation (RAG) system** built with a clear separation between **offline data processing** and **online inference**, designed to run on **free / low-cost cloud resources**.
+A **Production-ready Retrieval-Augmented Generation (RAG) system** with AWS deployment, FAISS semantic retrieval, Groq-hosted Llama-3.1-8B inference, and CloudWatch observability. This approach allows a clear separation between **offline data processing** and **online inference**, designed to run on **free / low-cost cloud resources**.
 
 This project demonstrates how to build, deploy, evaluate, and monitor a real RAG system end-to-end.
 
@@ -16,6 +16,26 @@ This project demonstrates how to build, deploy, evaluate, and monitor a real RAG
 * Tracks **latency, token usage, and logs** in CloudWatch
 
 ---
+## Project Architecture:
+
+CC News
+   │
+Colab GPU
+(clean → chunk → embed)
+   │
+FAISS + metadata
+   │
+Amazon S3
+   │
+AWS EC2 + FastAPI
+   │
+FAISS Retrieval
+   │
+Groq Llama-3.1-8B
+   │
+Answer
+
+---
 
 ## 🧱 End-to-End Workflow
 
@@ -25,10 +45,10 @@ Used only for heavy batch processing.
 
 **Steps**
 
-1. Download real-world news data (CC News)
+1. Download real-world news data (CC News, 100MB)
 2. Clean and normalize text
-3. Chunk documents into ~300–400 token segments
-4. Generate embeddings using SentenceTransformer `all-MiniLM-L6-v2` (GPU)
+3. Chunk documents into ~300–400 token segments (total: ~130k chunks)
+4. Generate embeddings using SentenceTransformer `all-MiniLM-L6-v2` (GPU), (384-dimensional vectors).
 5. Build FAISS vector index (cosine similarity)
 6. Save metadata (chunk → document mapping)
 7. Upload artifacts to **AWS S3**
@@ -175,9 +195,8 @@ rag-api/
 
 * Cross-encoder reranker
 * Caching layer (Redis)
-* Streaming responses
-* Docker + Load Balancer
+* Continuous index updates
+* Docker + ECR/Kubernets
 * Managed vector database
 
 ---
-
