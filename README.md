@@ -1,202 +1,279 @@
 
-# 🧠 RAG System with Cloud Observability & Cost-Aware LLM Serving
+````markdown
+# RAG System with AWS Deployment & Cloud Observability
 
-A **Production-ready Retrieval-Augmented Generation (RAG) system** with AWS deployment, FAISS semantic retrieval, Groq-hosted Llama-3.1-8B inference, and CloudWatch observability. This approach allows a clear separation between **offline data processing** and **online inference**, designed to run on **free / low-cost cloud resources**.
+Production-oriented Retrieval-Augmented Generation (RAG) system deployed on AWS EC2 with S3 artifact storage, FAISS semantic retrieval, Groq-hosted `openai/gpt-oss-20b` inference, and CloudWatch monitoring.
 
-This project demonstrates how to build, deploy, evaluate, and monitor a real RAG system end-to-end.
+The system separates **offline batch processing** from **online inference**, allowing computationally expensive embedding and indexing operations to be performed once and reused by the production API.
 
----
+## Key Capabilities
 
-## 🔍 Project does
-
-* Turns large text data into **semantic search indexes**
-* Serves **low-latency RAG queries** via an API
-* Uses **FAISS-only retrieval** 
-* Generates answers with **Groq LLaMA-3.1-8B-Instant**
-* Tracks **latency, token usage, and logs** in CloudWatch
-
----
-## Project Architecture:
-
-CC News
-   │
-Colab GPU
-(clean → chunk → embed)
-   │
-FAISS + metadata
-   │
-Amazon S3
-   │
-AWS EC2 + FastAPI
-   │
-FAISS Retrieval
-   │
-Groq Llama-3.1-8B
-   │
-Answer
+- Semantic document retrieval using **Sentence Transformers + FAISS**
+- **AWS S3** storage for reusable retrieval artifacts
+- **FastAPI** inference service running on an AWS EC2 `t3.micro`
+- LLM generation using **Groq `openai/gpt-oss-20b`**
+- Request-level logging with latency and token usage
+- **Amazon CloudWatch** custom metrics for production observability
+- Separate evaluation of retrieval quality, generation quality, and inference performance
 
 ---
 
-## 🧱 End-to-End Workflow
+## Architecture
 
-### 1️⃣ Offline Pipeline (Google Colab – GPU)
+```text
+                    OFFLINE LAYER
+                 Colab GPU / Batch Job
+                         │
+                  CC News dataset
+                         │
+                  Text cleaning
+                         │
+                  Sentence-aware
+                     chunking
+                         │
+              all-MiniLM-L6-v2
+                384-d embeddings
+                         │
+                 Normalize vectors
+                         │
+              FAISS IndexFlatIP
+                         │
+             ┌───────────┴───────────┐
+             │                       │
+        faiss.index             metadata.json
+             │                       │
+             └───────────┬───────────┘
+                         │
+                    Amazon S3
+                         │
+                         ▼
+                 ONLINE INFERENCE
+                  AWS EC2 t3.micro
+                         │
+                    FastAPI /query
+                         │
+                  Query embedding
+                         │
+                  FAISS Top-K search
+                         │
+                 Retrieved documents
+                         │
+                  Context assembly
+                         │
+                         ▼
+             Groq openai/gpt-oss-20b
+                         │
+                         ▼
+                    Final answer
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+         Local logging         CloudWatch
+         app.log               metrics
+````
 
-Used only for heavy batch processing.
+### Offline Processing
 
-**Steps**
+The offline layer processes approximately **100K CC News articles (~393 MB)**:
 
-1. Download real-world news data (CC News, 100MB)
-2. Clean and normalize text
-3. Chunk documents into ~300–400 token segments (total: ~130k chunks)
-4. Generate embeddings using SentenceTransformer `all-MiniLM-L6-v2` (GPU), (384-dimensional vectors).
-5. Build FAISS vector index (cosine similarity)
-6. Save metadata (chunk → document mapping)
-7. Upload artifacts to **AWS S3**
+1. Clean article text.
+2. Split text at sentence boundaries.
+3. Create chunks of up to 400 whitespace-separated words.
+4. Generate 384-dimensional embeddings using `all-MiniLM-L6-v2`.
+5. Normalize embeddings for cosine-similarity search.
+6. Build a FAISS `IndexFlatIP` exact nearest-neighbor index.
+7. Save the index and document metadata.
+8. Upload artifacts to Amazon S3.
 
-**Output artifacts**
+The resulting artifacts are reused during inference; embeddings and indexing are **not recomputed for each query**.
 
-* `faiss.index`
-* `metadata.json`
+### Online Inference
 
-These artifacts are reused by the online system (no recomputation).
+The EC2 service performs:
 
----
-
-### 2️⃣ Online API (AWS EC2 – CPU only)
-
-Runs on a **t3.micro** instance.
-
-## ▶️ How to Run (EC2)
-
-1. Upload FAISS artifacts to S3
-2. Launch EC2 (t3.micro)
-3. Install dependencies
-4. Start API:
-   uvicorn app.main:app --host 0.0.0.0 --port 8000
-5. Query:
-   POST /query
-
-**Request flow**
-
-```
+```text
 User Query
- → SentenceTransformer embedding
- → FAISS Top-K semantic search
- → Context assembly
- → Groq LLaMA-3.1-8B-Instant
- → Final answer
+    ↓
+SentenceTransformer embedding
+    ↓
+FAISS Top-K semantic retrieval
+    ↓
+Context assembly
+    ↓
+Groq openai/gpt-oss-20b
+    ↓
+Final Answer
 ```
 
-**Key points**
-
-* No GPU on EC2
-* FAISS loaded once into RAM
-* LLM inference handled by Groq API
-* FastAPI used for serving
+The API loads `faiss.index` and `metadata.json` from S3 when the service starts.
 
 ---
 
-## 📊 Evaluation Strategy
+## AWS & Observability
+
+### AWS Components
+
+* **EC2 t3.micro** — FastAPI inference service
+* **S3** — FAISS index and metadata storage
+* **CloudWatch** — application performance metrics
+
+### Application Logging
+
+`app.log` records:
+
+* Request ID
+* Query
+* Retrieved documents
+* Retrieval latency
+* LLM latency
+* Total request latency
+* Token usage
+
+CloudWatch custom metrics track retrieval latency, LLM latency, total latency, and token usage.
+
+---
+
+## Evaluation
+
+The system was evaluated across **retrieval quality, generation quality, and production latency**.
 
 ### Retrieval
 
-* Recall@K
-* MRR@K
+50-query benchmark derived from the evaluation corpus:
 
-### Generation (RAG vs LLM-only)
+| Metric    | Result |
+| --------- | -----: |
+| Recall@5  |   0.68 |
+| Recall@10 |   0.70 |
+| MRR@5     |  0.509 |
+| MRR@10    |  0.512 |
 
-* Compare:
+### Generation
 
-  * LLaMA + FAISS context (RAG)
-  * LLaMA without retrieval
-* Focus on grounding and factual consistency
+The RAG answers were evaluated by a separate LLM judge using `qwen/qwen3.8-27b`.
 
-**Retrieval results (50 queries)**
-    
-    "num_queries": 50,
-    "Recall@5": 0.86,
-    "Recall@10": 0.88,
-    "MRR@10": 0.6982
-     
+Three-level scoring:
 
----
+* **0** — incorrect / unsupported / irrelevant
+* **1** — partially correct / supported / relevant
+* **2** — fully correct / supported / relevant
 
-## 📈 Monitoring & Observability (AWS CloudWatch)
+| Metric       |   Result |
+| ------------ | -------: |
+| Correctness  | 1.38 / 2 |
+| Faithfulness | 1.46 / 2 |
+| Relevance    | 1.50 / 2 |
 
-Production-style monitoring from EC2 logs.
+### Performance
 
-### Metrics (1-minute resolution)
+Measured on the deployed EC2 inference service:
 
-| Metric            | Avg         |
-| ----------------- | ----------- |
-| Embedding Latency | ~50 ms      |
-| FAISS Latency     | ~20 ms      |
-| LLM Latency       | ~200 ms     |
-| **Total Latency** | **~270 ms** |
+| Metric             |     P50 |      P95 |
+| ------------------ | ------: | -------: |
+| Retrieval latency  | 86.8 ms | 223.5 ms |
+| LLM latency        |  18.4 s |   21.3 s |
+| End-to-end latency |  18.5 s |   21.3 s |
 
-**Token usage**
+**Performance sample:** 36 completed queries.
 
-* Avg tokens/query ≈ 130
-* Total ≈ 3.77k
-* Cost < $0.01 (Groq)
+### Evaluation Limitations
 
-**Logs**
+The retrieval and generation benchmarks contain 50 questions mapped to known relevant documents in the evaluation corpus. This provides a reproducible benchmark but does not fully represent open-ended production traffic, such as differently phrased questions, multi-document questions, or questions with no answer in the corpus.
 
-* 60 structured request traces
-* p95 latency ≈ 270 ms
-* 0 errors
+Performance testing included 36 completed queries because the external LLM API quota was reached during the 50-query test.
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
-```
-rag-api/
-├── app/                       # Online inference service (EC2)
-│   ├── main.py                # FastAPI entrypoint
-│   ├── retrieval.py           # FAISS retrieval + query pipeline
-│   ├── s3_loader.py           # Load FAISS + metadata from S3
-│   ├── groq_client.py         # Groq LLaMA API wrapper
-│   ├── logger.py              # Structured logging
-│   └── request_logger.py      # Per-request tracing & latency metrics
+```text
+RAG_2/
+├── app/
+│   ├── main.py
+│   ├── retrieval.py
+│   ├── s3_loader.py
+│   ├── groq_client.py
+│   └── logger.py
 │
-├── evaluation/                # Offline evaluation & analysis
-│   ├── run_eval.py            # Main evaluation entrypoint
-│   │
-│   ├── retrieval/             # Retrieval-quality evaluation
-│   │   └── eval_retrieval.py  # Recall@K, MRR
-│   │
-│   ├── generation/            # Generation-quality evaluation
-│   │   └── eval_generation.py # RAG vs LLM-only comparison
-│   │
-│   ├── data/                  # Evaluation datasets
+├── evaluation/
+│   ├── run_eval.py
+│   ├── retrieval/
+│   │   └── eval_retrieval.py
+│   ├── generation/
+│   │   ├── eval_generation.py
+│   │   └── judge_generation.py
+│   ├── performance/
+│   │   └── eval_performance_from_logs.py
+│   ├── data/
 │   │   ├── eval_queries.json
-│   │   └── gold_queries_balanced.json
-│   │
-│   └── reports/               # Evaluation outputs
+│   │   ├── eval_documents.json
+│   │   └── generated_answers.json
+│   └── reports/
 │       ├── retrieval_metrics.json
-│       └── results.json
+│       ├── generation_metrics.json
+│       └── performance_metrics.json
 │
+├── artifacts/
+│   ├── faiss.index
+│   └── metadata.json
+│
+├── logs/
+│   └── app.log
+│
+├── requirements.txt
 └── README.md
 ```
+
+## Running the API
+
+### 1. Connect to EC2
+
+```bash
+chmod 400 ~/.ssh/rag2-ec2-key.pem
+
+ssh -i ~/.ssh/rag2-ec2-key.pem ubuntu@YOUR_EC2_PUBLIC_IP
+```
+
+### 2. Activate the environment
+
+```bash
+cd ~/RAG_2
+source ~/rag-env/bin/activate
+```
+
+### 3. Set the Groq API key
+
+```bash
+export GROQ_API_KEY="YOUR_GROQ_KEY"
+```
+
+Verify without printing the full key:
+
+```bash
+echo ${GROQ_API_KEY:0:8}
+```
+
+### 4. Start the API
+
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+The API exposes:
+
+```text
+POST /query
+```
+
 ---
 
-## 🧠 Design Decisions
+## Future Improvements
 
-- Offline GPU processing (Colab) to avoid costly always-on GPUs
-- CPU-only EC2 serving for stability and cost control
-- FAISS in-memory index for low-latency retrieval
-- External LLM API (Groq) to decouple inference from infra
-- CloudWatch logging to enable production-style observability
-
----
-
-## 🚀 Future Improvements
-
-* Cross-encoder reranker
-* Caching layer (Redis)
-* Continuous index updates
-* Docker + ECR/Kubernets
+* Cross-encoder reranking
+* Query/result caching
+* Incremental index updates
+* Dockerized deployment
+* Kubernetes/ECR deployment
 * Managed vector database
+* More diverse production-style evaluation queries
 
----

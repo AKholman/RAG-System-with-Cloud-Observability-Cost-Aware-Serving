@@ -1,6 +1,1161 @@
 {
-  "num_queries": 50,
-  "Recall@5": 0.86,
-  "Recall@10": 0.88,
-  "MRR@10": 0.6982
+  "metrics": {
+    "num_queries": 50,
+    "recall@5": 0.68,
+    "recall@10": 0.7,
+    "mrr@5": 0.5086666666666667,
+    "mrr@10": 0.512
+  },
+  "per_query": [
+    {
+      "query": "How are Regina Willoughby and her 18-year-old daughter Melina connected through Columbia City Ballet?",
+      "relevant_doc_ids": [
+        0
+      ],
+      "retrieved_doc_ids": [
+        0,
+        23,
+        18152,
+        103679,
+        111723,
+        131110,
+        126022,
+        137917,
+        211203,
+        175946
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Where did the 5.1 magnitude earthquake in Albania occur, and was any damage reported?",
+      "relevant_doc_ids": [
+        4000
+      ],
+      "retrieved_doc_ids": [
+        4000,
+        64171,
+        195535,
+        158524,
+        13809,
+        193896,
+        14473,
+        18358,
+        100247,
+        226521
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "According to the UN report, what types of harm were children experiencing in conflicts?",
+      "relevant_doc_ids": [
+        8000
+      ],
+      "retrieved_doc_ids": [
+        6689,
+        95873,
+        204091,
+        8007,
+        8000,
+        7992,
+        7988,
+        7984,
+        7975,
+        7962
+      ],
+      "relevant_rank": 5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.2,
+      "mrr@10": 0.2
+    },
+    {
+      "query": "What prize does the winner of the airport love-story contest receive?",
+      "relevant_doc_ids": [
+        12000
+      ],
+      "retrieved_doc_ids": [
+        12000,
+        174402,
+        138243,
+        152846,
+        182554,
+        26053,
+        162332,
+        83896,
+        162344,
+        141166
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Why are environmentalists protesting Poland's plan to allow hunting of bison?",
+      "relevant_doc_ids": [
+        16000
+      ],
+      "retrieved_doc_ids": [
+        82985,
+        16000,
+        222317,
+        121630,
+        222319,
+        222318,
+        218249,
+        5653,
+        201601,
+        36180
+      ],
+      "relevant_rank": 2,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.5,
+      "mrr@10": 0.5
+    },
+    {
+      "query": "How many shooting scenes were connected to the gunman allegedly terrorizing drivers on Michigan highways?",
+      "relevant_doc_ids": [
+        20000
+      ],
+      "retrieved_doc_ids": [
+        19999,
+        20132,
+        60910,
+        20000,
+        77582,
+        76710,
+        148712,
+        77831,
+        76910,
+        148820
+      ],
+      "relevant_rank": 4,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.25,
+      "mrr@10": 0.25
+    },
+    {
+      "query": "What did Condoleezza Rice ask voters to do ahead of the special election?",
+      "relevant_doc_ids": [
+        24000
+      ],
+      "retrieved_doc_ids": [
+        24000,
+        23599,
+        23999,
+        23598,
+        116239,
+        46187,
+        24646,
+        23117,
+        106906,
+        38408
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Who was ranked the top wide receiver in the Associated Press rankings?",
+      "relevant_doc_ids": [
+        28000
+      ],
+      "retrieved_doc_ids": [
+        62238,
+        99078,
+        27997,
+        76915,
+        28000,
+        62240,
+        76918,
+        82277,
+        83594,
+        60995
+      ],
+      "relevant_rank": 5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.2,
+      "mrr@10": 0.2
+    },
+    {
+      "query": "What activities and groups were listed in the What's On listings for the Preston area?",
+      "relevant_doc_ids": [
+        32000
+      ],
+      "retrieved_doc_ids": [
+        32070,
+        32168,
+        31992,
+        32069,
+        32155,
+        31960,
+        32158,
+        32143,
+        32162,
+        32167
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "What alternative explanation did researchers give for the apparent link between antidepressant use during pregnancy and autism?",
+      "relevant_doc_ids": [
+        36000
+      ],
+      "retrieved_doc_ids": [
+        36000,
+        185595,
+        36001,
+        185594,
+        117992,
+        89890,
+        85596,
+        88067,
+        88068,
+        87701
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Which museum is described as a must-see institution in Sacramento?",
+      "relevant_doc_ids": [
+        40000
+      ],
+      "retrieved_doc_ids": [
+        40000,
+        130858,
+        14520,
+        74194,
+        148426,
+        130631,
+        116054,
+        43202,
+        130855,
+        148424
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What historical events does the article Mental Walls identify as major turning points?",
+      "relevant_doc_ids": [
+        44000
+      ],
+      "retrieved_doc_ids": [
+        107890,
+        143797,
+        211674,
+        181879,
+        181682,
+        44000,
+        95673,
+        199075,
+        98220,
+        95674
+      ],
+      "relevant_rank": 6,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.16666666666666666
+    },
+    {
+      "query": "What was the starting price mentioned for the McLaren GTR at the Geneva Auto Show?",
+      "relevant_doc_ids": [
+        48000
+      ],
+      "retrieved_doc_ids": [
+        48000,
+        47999,
+        185864,
+        80530,
+        225995,
+        230558,
+        47997,
+        90096,
+        107494,
+        185947
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What type of special intervention program does the article propose for areas affected by insurgency?",
+      "relevant_doc_ids": [
+        52000
+      ],
+      "retrieved_doc_ids": [
+        55483,
+        52000,
+        211790,
+        84874,
+        15854,
+        66122,
+        230492,
+        132003,
+        40699,
+        204717
+      ],
+      "relevant_rank": 2,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.5,
+      "mrr@10": 0.5
+    },
+    {
+      "query": "What does Manish Uniyal discuss regarding the Nigerian economy and consumer value?",
+      "relevant_doc_ids": [
+        56000
+      ],
+      "retrieved_doc_ids": [
+        56000,
+        55495,
+        52110,
+        52806,
+        51666,
+        165845,
+        52107,
+        167362,
+        146930,
+        52111
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "How many players were on the Palmerton football team's roster?",
+      "relevant_doc_ids": [
+        60000
+      ],
+      "retrieved_doc_ids": [
+        172366,
+        137024,
+        162562,
+        60000,
+        181991,
+        181599,
+        83659,
+        92337,
+        168298,
+        168138
+      ],
+      "relevant_rank": 4,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.25,
+      "mrr@10": 0.25
+    },
+    {
+      "query": "What controversy involving Jagmeet Singh is discussed in the editorial?",
+      "relevant_doc_ids": [
+        64000
+      ],
+      "retrieved_doc_ids": [
+        37148,
+        61153,
+        68700,
+        222828,
+        64000,
+        195696,
+        57400,
+        36789,
+        36548,
+        36788
+      ],
+      "relevant_rank": 5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.2,
+      "mrr@10": 0.2
+    },
+    {
+      "query": "Who did David Goffin defeat in the second round of the Barcelona Open?",
+      "relevant_doc_ids": [
+        68000
+      ],
+      "retrieved_doc_ids": [
+        72242,
+        38021,
+        3046,
+        68000,
+        225526,
+        63451,
+        222702,
+        216933,
+        219098,
+        63944
+      ],
+      "relevant_rank": 4,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.25,
+      "mrr@10": 0.25
+    },
+    {
+      "query": "What is the premise of the alternate-history drama SS-GB?",
+      "relevant_doc_ids": [
+        72000
+      ],
+      "retrieved_doc_ids": [
+        72000,
+        30130,
+        60244,
+        108887,
+        42000,
+        60245,
+        136532,
+        71191,
+        70969,
+        70962
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What information was reported about the man accused of shooting a congressman and his political activities?",
+      "relevant_doc_ids": [
+        76000
+      ],
+      "retrieved_doc_ids": [
+        75286,
+        75834,
+        77601,
+        84528,
+        75829,
+        90971,
+        91626,
+        89379,
+        150951,
+        77170
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "Why is the Honda S2000 remembered positively in the article about resurrected cars?",
+      "relevant_doc_ids": [
+        80000
+      ],
+      "retrieved_doc_ids": [
+        80000,
+        79996,
+        184999,
+        46892,
+        224056,
+        89172,
+        46891,
+        80002,
+        79997,
+        80005
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What was the tax filing deadline mentioned in the article, and what could taxpayers do if they missed it?",
+      "relevant_doc_ids": [
+        84000
+      ],
+      "retrieved_doc_ids": [
+        84000,
+        83668,
+        81821,
+        91280,
+        59699,
+        122316,
+        75405,
+        91279,
+        112717,
+        16511
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What did Adam Schiff say about the FISA warrant application discussed in the Nunes memo controversy?",
+      "relevant_doc_ids": [
+        88000
+      ],
+      "retrieved_doc_ids": [
+        138292,
+        41016,
+        90174,
+        91192,
+        18592,
+        126431,
+        117305,
+        20399,
+        161169,
+        84913
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "What was the Treasury Department's analysis described in the article about?",
+      "relevant_doc_ids": [
+        92000
+      ],
+      "retrieved_doc_ids": [
+        62587,
+        40608,
+        153091,
+        41827,
+        1132,
+        124613,
+        41227,
+        112573,
+        23508,
+        112421
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "What happened to the pistol and other belongings after the bar shooting described in the article?",
+      "relevant_doc_ids": [
+        96000
+      ],
+      "retrieved_doc_ids": [
+        5274,
+        65079,
+        147814,
+        228613,
+        126812,
+        26910,
+        35617,
+        34537,
+        6700,
+        121255
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "How did Jason Corbett's brother describe him and his family's experience during the court proceedings?",
+      "relevant_doc_ids": [
+        100000
+      ],
+      "retrieved_doc_ids": [
+        100000,
+        99997,
+        99999,
+        99761,
+        100003,
+        99760,
+        100002,
+        99762,
+        148839,
+        209006
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What did Ben Davies say about Ryan Giggs giving young players opportunities for Wales?",
+      "relevant_doc_ids": [
+        104000
+      ],
+      "retrieved_doc_ids": [
+        194268,
+        172597,
+        32250,
+        104000,
+        199870,
+        207530,
+        180154,
+        170381,
+        182234,
+        181518
+      ],
+      "relevant_rank": 4,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.25,
+      "mrr@10": 0.25
+    },
+    {
+      "query": "Why was Matt Forte considered unlikely to be traded before the trade deadline?",
+      "relevant_doc_ids": [
+        108000
+      ],
+      "retrieved_doc_ids": [
+        108000,
+        12735,
+        11913,
+        14625,
+        14510,
+        75503,
+        16021,
+        15457,
+        11009,
+        83437
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What did Donald Trump say about the resignation of the Black CEO from his manufacturing council?",
+      "relevant_doc_ids": [
+        112000
+      ],
+      "retrieved_doc_ids": [
+        158076,
+        20786,
+        91980,
+        19261,
+        199418,
+        59213,
+        75071,
+        111998,
+        123518,
+        158155
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "Which Golden State Warriors players and roster decisions are discussed in the article about their championship run?",
+      "relevant_doc_ids": [
+        116000
+      ],
+      "retrieved_doc_ids": [
+        204039,
+        93678,
+        14056,
+        24279,
+        77576,
+        116364,
+        77577,
+        100447,
+        116365,
+        24730
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "What did Jordan Hamlett plead guilty to doing with Donald Trump's Social Security number?",
+      "relevant_doc_ids": [
+        120000
+      ],
+      "retrieved_doc_ids": [
+        120000,
+        137015,
+        66940,
+        75146,
+        76292,
+        34091,
+        137518,
+        137019,
+        137016,
+        66942
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What did recent Scottish polling suggest about support for the SNP and Scottish independence?",
+      "relevant_doc_ids": [
+        124000
+      ],
+      "retrieved_doc_ids": [
+        123999,
+        124000,
+        224500,
+        123994,
+        140392,
+        228455,
+        227661,
+        124090,
+        124050,
+        226869
+      ],
+      "relevant_rank": 2,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.5,
+      "mrr@10": 0.5
+    },
+    {
+      "query": "What were the results of the Baker Spartan volleyball team's homecoming matches?",
+      "relevant_doc_ids": [
+        128000
+      ],
+      "retrieved_doc_ids": [
+        128000,
+        128012,
+        97295,
+        63648,
+        125460,
+        28203,
+        63647,
+        137070,
+        155769,
+        37892
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What was the purpose of Nigeria's Operation Crocodile Smile II?",
+      "relevant_doc_ids": [
+        132000
+      ],
+      "retrieved_doc_ids": [
+        132000,
+        132002,
+        132001,
+        167541,
+        167543,
+        100695,
+        167077,
+        165934,
+        55407,
+        54858
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "How did students at Summit Street School commemorate veterans?",
+      "relevant_doc_ids": [
+        136000
+      ],
+      "retrieved_doc_ids": [
+        135999,
+        201504,
+        136000,
+        136001,
+        131111,
+        198218,
+        151902,
+        95754,
+        192258,
+        152565
+      ],
+      "relevant_rank": 3,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.3333333333333333,
+      "mrr@10": 0.3333333333333333
+    },
+    {
+      "query": "Who were the two visitors reported missing after a cave tour at Sequoia National Park?",
+      "relevant_doc_ids": [
+        140000
+      ],
+      "retrieved_doc_ids": [
+        140000,
+        106525,
+        18854,
+        155907,
+        37934,
+        15085,
+        10411,
+        10371,
+        140001,
+        147786
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "Why were large employee buyouts offered at newspapers such as the Los Angeles Times and Baltimore Sun?",
+      "relevant_doc_ids": [
+        144000
+      ],
+      "retrieved_doc_ids": [
+        144003,
+        143999,
+        144002,
+        144009,
+        143889,
+        143760,
+        143763,
+        143768,
+        143764,
+        143997
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "What type of dining experience is recommended at the fresh-fish venue described in Miami?",
+      "relevant_doc_ids": [
+        148000
+      ],
+      "retrieved_doc_ids": [
+        148000,
+        147997,
+        8930,
+        159491,
+        201253,
+        109974,
+        2707,
+        24475,
+        23279,
+        147999
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What disagreement about North Korea's nuclear activity is described in the article about the North Korea talks?",
+      "relevant_doc_ids": [
+        152000
+      ],
+      "retrieved_doc_ids": [
+        211955,
+        225850,
+        225353,
+        181141,
+        87815,
+        212064,
+        85684,
+        120301,
+        104094,
+        83409
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "How did Jared Donaldson's underhand serve strategy compare with Michael Chang's famous strategy at the French Open?",
+      "relevant_doc_ids": [
+        156000
+      ],
+      "retrieved_doc_ids": [
+        156001,
+        155842,
+        37888,
+        37477,
+        61475,
+        155779,
+        37847,
+        206230,
+        1130,
+        77623
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "How many people were hospitalized after the chain-reaction crash in Plantation?",
+      "relevant_doc_ids": [
+        160000
+      ],
+      "retrieved_doc_ids": [
+        177816,
+        160000,
+        176100,
+        198135,
+        136493,
+        97188,
+        54522,
+        54339,
+        111709,
+        69193
+      ],
+      "relevant_rank": 2,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.5,
+      "mrr@10": 0.5
+    },
+    {
+      "query": "What fashion show featured models who were breast cancer survivors?",
+      "relevant_doc_ids": [
+        164000
+      ],
+      "retrieved_doc_ids": [
+        164000,
+        203363,
+        163970,
+        163969,
+        202753,
+        163999,
+        203362,
+        203057,
+        135721,
+        109696
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What caused delays at Derby station and which train routes were affected?",
+      "relevant_doc_ids": [
+        168000
+      ],
+      "retrieved_doc_ids": [
+        168075,
+        167999,
+        168162,
+        168310,
+        168134,
+        20753,
+        67890,
+        168065,
+        168865,
+        168625
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "Why was Jenna Russell initially concerned about taking over the role of Michelle?",
+      "relevant_doc_ids": [
+        172000
+      ],
+      "retrieved_doc_ids": [
+        171999,
+        172000,
+        71147,
+        59525,
+        158932,
+        38010,
+        105498,
+        69321,
+        202020,
+        45764
+      ],
+      "relevant_rank": 2,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 0.5,
+      "mrr@10": 0.5
+    },
+    {
+      "query": "What message did President Obama deliver to students according to the article?",
+      "relevant_doc_ids": [
+        176000
+      ],
+      "retrieved_doc_ids": [
+        30456,
+        150936,
+        117980,
+        36884,
+        65390,
+        184784,
+        153005,
+        175998,
+        17061,
+        175997
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "Which players scored during Real Madrid's comeback described in the Champions League article?",
+      "relevant_doc_ids": [
+        180000
+      ],
+      "retrieved_doc_ids": [
+        230726,
+        72461,
+        219252,
+        226921,
+        218550,
+        72460,
+        72724,
+        225678,
+        72193,
+        192831
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "How is the Irish rugby system helping reduce player injuries?",
+      "relevant_doc_ids": [
+        184000
+      ],
+      "retrieved_doc_ids": [
+        184000,
+        184002,
+        184008,
+        183999,
+        184004,
+        184006,
+        94097,
+        183420,
+        179278,
+        181826
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What products and applications are included in the cardiac assist devices market analysis?",
+      "relevant_doc_ids": [
+        188000
+      ],
+      "retrieved_doc_ids": [
+        188000,
+        187832,
+        188003,
+        187835,
+        188002,
+        187834,
+        213984,
+        188001,
+        187833,
+        213983
+      ],
+      "relevant_rank": 1,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr@5": 1.0,
+      "mrr@10": 1.0
+    },
+    {
+      "query": "What types of content does Facebook's policy prohibit or restrict according to the article?",
+      "relevant_doc_ids": [
+        192000
+      ],
+      "retrieved_doc_ids": [
+        110715,
+        110716,
+        110717,
+        37197,
+        122264,
+        24187,
+        51811,
+        129466,
+        122262,
+        122265
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    },
+    {
+      "query": "What types of foods did nutritionists say they avoid keeping in their kitchens?",
+      "relevant_doc_ids": [
+        196000
+      ],
+      "retrieved_doc_ids": [
+        88386,
+        160397,
+        219782,
+        91262,
+        88898,
+        49239,
+        98615,
+        85638,
+        116835,
+        196341
+      ],
+      "relevant_rank": null,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.0
+    }
+  ]
 }

@@ -1,12 +1,352 @@
 [
-  {"query": "how does attention mechanism work in transformer models and why is it better than RNNs?"},
-  {"query": "what are the trade-offs between vector search and keyword search in information retrieval systems?"},
-  {"query": "how does AWS Lambda handle scaling under high request traffic?"},
-  {"query": "explain the difference between supervised, unsupervised, and self-supervised learning with examples"},
-  {"query": "what causes hallucinations in large language models and how can they be reduced?"},
-  {"query": "how does cosine similarity work for text embeddings and why is it widely used?"},
-  {"query": "what are common failure modes in retrieval augmented generation (RAG) systems?"},
-  {"query": "how does batch normalization improve training stability in deep neural networks?"},
-  {"query": "what are the key differences between SQL and NoSQL databases and when should each be used?"},
-  {"query": "how do recommendation systems like YouTube or Netflix rank and personalize content?"}
+  {
+    "query": "How are Regina Willoughby and her 18-year-old daughter Melina connected through Columbia City Ballet?",
+    "relevant_doc_ids": [
+      0
+    ],
+    "reference_answer": "Regina Willoughby is retiring from the stage in March, while her 18\u2011year\u2011old daughter Melina is beginning her first season as a trainee with Columbia City Ballet, and they are sharing the stage together for that season."
+  },
+  {
+    "query": "Where did the 5.1 magnitude earthquake in Albania occur, and was any damage reported?",
+    "relevant_doc_ids": [
+      4000
+    ],
+    "reference_answer": "The 5.1\u2011magnitude quake struck off western Albania, about 18\u202fkm underground near Lalesi Bay, 30\u202fkm west of Tirana, and no injuries or damage have been reported."
+  },
+  {
+    "query": "According to the UN report, what types of harm were children experiencing in conflicts?",
+    "relevant_doc_ids": [
+      8000
+    ],
+    "reference_answer": "The report notes that children were being killed, injured, recruited as soldiers, sexually abused, maimed, abducted, and that schools and hospitals were being attacked."
+  },
+  {
+    "query": "What prize does the winner of the airport love-story contest receive?",
+    "relevant_doc_ids": [
+      12000
+    ],
+    "reference_answer": "The winner receives $1,000 towards a romantic getaway."
+  },
+  {
+    "query": "Why are environmentalists protesting Poland's plan to allow hunting of bison?",
+    "relevant_doc_ids": [
+      16000
+    ],
+    "reference_answer": "Environmentalists protest because bison are protected by law and are a symbol of Poland\u2019s nature, and they oppose the plan to allow hunting of these large mammals."
+  },
+  {
+    "query": "How many shooting scenes were connected to the gunman allegedly terrorizing drivers on Michigan highways?",
+    "relevant_doc_ids": [
+      20000
+    ],
+    "reference_answer": "Four shooting scenes."
+  },
+  {
+    "query": "What did Condoleezza Rice ask voters to do ahead of the special election?",
+    "relevant_doc_ids": [
+      24000
+    ],
+    "reference_answer": "The document does not mention any request from Condoleezza Rice to voters ahead of the special election."
+  },
+  {
+    "query": "Who was ranked the top wide receiver in the Associated Press rankings?",
+    "relevant_doc_ids": [
+      28000
+    ],
+    "reference_answer": "The document does not specify who was ranked the top wide receiver."
+  },
+  {
+    "query": "What activities and groups were listed in the What's On listings for the Preston area?",
+    "relevant_doc_ids": [
+      32000
+    ],
+    "reference_answer": "The listings included a Friendship Group, Preston Chess Club, New Longton Artists, Tulketh Tennis (junior and U14 squads), Worldwise Samba Drummers, The Rawstorne Singers, and Tai Chi Classes."
+  },
+  {
+    "query": "What alternative explanation did researchers give for the apparent link between antidepressant use during pregnancy and autism?",
+    "relevant_doc_ids": [
+      36000
+    ],
+    "reference_answer": "Researchers suggested that the apparent link may actually be due to maternal mental illnesses, as the association weakened when past maternal illness was controlled for."
+  },
+  {
+    "query": "Which museum is described as a must-see institution in Sacramento?",
+    "relevant_doc_ids": [
+      40000
+    ],
+    "reference_answer": "The Crocker is described as a must\u2011see institution in Sacramento."
+  },
+  {
+    "query": "What historical events does the article Mental Walls identify as major turning points?",
+    "relevant_doc_ids": [
+      44000
+    ],
+    "reference_answer": "The article identifies World War\u202fII, the September\u202f1,\u202f1939 German invasion of Poland, and the September\u202f11,\u202f2001 attacks as major turning points."
+  },
+  {
+    "query": "What was the starting price mentioned for the McLaren GTR at the Geneva Auto Show?",
+    "relevant_doc_ids": [
+      48000
+    ],
+    "reference_answer": "The McLaren GTR was priced starting at a million pounds, which is about $1.4\u202fmillion, not including tax."
+  },
+  {
+    "query": "What type of special intervention program does the article propose for areas affected by insurgency?",
+    "relevant_doc_ids": [
+      52000
+    ],
+    "reference_answer": "A special intervention program that mobilizes resources from domestic and international donor agencies, development partners and governments for a comprehensive socio\u2011economic recovery of the affected areas."
+  },
+  {
+    "query": "What does Manish Uniyal discuss regarding the Nigerian economy and consumer value?",
+    "relevant_doc_ids": [
+      56000
+    ],
+    "reference_answer": "Manish Uniyal notes that the Nigerian economy, which entered recession in 2016 after falling oil prices and production, is now showing signs of recovery driven by higher oil prices, increased production, and the Central Bank\u2019s foreign\u2011exchange supply, and that his company is working to add more value to consumers\u2019 demand."
+  },
+  {
+    "query": "How many players were on the Palmerton football team's roster?",
+    "relevant_doc_ids": [
+      60000
+    ],
+    "reference_answer": "The Palmerton football team has 32 players on its roster."
+  },
+  {
+    "query": "What controversy involving Jagmeet Singh is discussed in the editorial?",
+    "relevant_doc_ids": [
+      64000
+    ],
+    "reference_answer": "The editorial discusses controversy over Jagmeet Singh\u2019s participation in rallies with Sikh extremists abroad that promoted political violence and separatism."
+  },
+  {
+    "query": "Who did David Goffin defeat in the second round of the Barcelona Open?",
+    "relevant_doc_ids": [
+      68000
+    ],
+    "reference_answer": "David Goffin defeated Marcel\u202fGranollers of Spain in the second round of the Barcelona Open."
+  },
+  {
+    "query": "What is the premise of the alternate-history drama SS-GB?",
+    "relevant_doc_ids": [
+      72000
+    ],
+    "reference_answer": "SS\u2011GB is an alternate\u2011history drama set in 1941 where England and Wales are under Nazi occupation after losing the Battle of Britain, following detective Douglas Archer who works for the SS in occupied London while navigating resistance and moral dilemmas."
+  },
+  {
+    "query": "What information was reported about the man accused of shooting a congressman and his political activities?",
+    "relevant_doc_ids": [
+      76000
+    ],
+    "reference_answer": "He was a fan of Vermont Sen.\u202fBernie Sanders and had apparently volunteered on Sanders\u2019 2016 presidential campaign."
+  },
+  {
+    "query": "Why is the Honda S2000 remembered positively in the article about resurrected cars?",
+    "relevant_doc_ids": [
+      80000
+    ],
+    "reference_answer": "It is remembered positively because it delivered driving pleasure without excessive technological interference and was as reliable and easy to use as a Civic or Accord."
+  },
+  {
+    "query": "What was the tax filing deadline mentioned in the article, and what could taxpayers do if they missed it?",
+    "relevant_doc_ids": [
+      84000
+    ],
+    "reference_answer": "The deadline was April\u202f18, and taxpayers who missed it could file an extension by submitting Form\u202f4868, which extends the filing period to October\u202f16."
+  },
+  {
+    "query": "What did Adam Schiff say about the FISA warrant application discussed in the Nunes memo controversy?",
+    "relevant_doc_ids": [
+      88000
+    ],
+    "reference_answer": "Schiff said that, contrary to the Nunes memo, the Page FISA warrant application did contain references to Candidate\u202f1 and Candidate\u202f2, and that such applications normally would not include specific references to people, law firms, or political campaigns because of minimization procedures."
+  },
+  {
+    "query": "What was the Treasury Department's analysis described in the article about?",
+    "relevant_doc_ids": [
+      92000
+    ],
+    "reference_answer": "The Treasury Department\u2019s analysis examined the Senate tax plan\u2019s fiscal impact, projecting $408\u202fbillion in revenue and a $1\u202ftrillion increase in the deficit while assuming a 2.9\u202f% economic growth rate, and noted that more than half of the projected revenue would come from changes to corporate taxes."
+  },
+  {
+    "query": "What happened to the pistol and other belongings after the bar shooting described in the article?",
+    "relevant_doc_ids": [
+      96000
+    ],
+    "reference_answer": "Khatib gave the pistol to Sheikh and handed over his phone\u2019s SIM card and scooter keys. The scooter was later found abandoned by the roadside in Sinquetim, Navelim, and recovered by police."
+  },
+  {
+    "query": "How did Jason Corbett's brother describe him and his family's experience during the court proceedings?",
+    "relevant_doc_ids": [
+      100000
+    ],
+    "reference_answer": "He praised his \u201cwonderful family who endured all the horror in the court for four weeks, yet held their dignity and composure in the face of pure evil.\u201d"
+  },
+  {
+    "query": "What did Ben Davies say about Ryan Giggs giving young players opportunities for Wales?",
+    "relevant_doc_ids": [
+      104000
+    ],
+    "reference_answer": "Ben Davies said that Ryan\u202fGiggs had \u201cput faith in people that have done well on the training pitch\u201d and that the young players \u201cdeserve it after the week we\u2019ve had training\u201d and \u201cdid excellently and it\u2019s something to build on.\u201d"
+  },
+  {
+    "query": "Why was Matt Forte considered unlikely to be traded before the trade deadline?",
+    "relevant_doc_ids": [
+      108000
+    ],
+    "reference_answer": "Matt Forte was unlikely to be traded before the deadline because he was dealing with a lingering turf\u2011toe injury that would prevent him from being 100\u202fpercent in time."
+  },
+  {
+    "query": "What did Donald Trump say about the resignation of the Black CEO from his manufacturing council?",
+    "relevant_doc_ids": [
+      112000
+    ],
+    "reference_answer": "The document does not mention any statement by Donald Trump about the resignation of a Black CEO from his manufacturing council."
+  },
+  {
+    "query": "Which Golden State Warriors players and roster decisions are discussed in the article about their championship run?",
+    "relevant_doc_ids": [
+      116000
+    ],
+    "reference_answer": "The article notes that the Warriors waived veteran guard\u2011forward Omri Casspi, signed Quinn Cook to a two\u2011way contract and then to the playoff roster and next season, and that injuries to Stephen Curry, Andrew McCaw and Andre Iguodala forced roster adjustments. It also mentions a surplus of big men that did not fit Kerr\u2019s vision against a Rockets team that often went small."
+  },
+  {
+    "query": "What did Jordan Hamlett plead guilty to doing with Donald Trump's Social Security number?",
+    "relevant_doc_ids": [
+      120000
+    ],
+    "reference_answer": "Jordan Hamlett pleaded guilty to misusing Donald Trump\u2019s Social Security number in repeated attempts to access the president\u2019s federal tax information."
+  },
+  {
+    "query": "What did recent Scottish polling suggest about support for the SNP and Scottish independence?",
+    "relevant_doc_ids": [
+      124000
+    ],
+    "reference_answer": "Recent polls found that 47\u202f% of respondents would vote for the SNP in another general election. Pro\u2011union Conservatives are polling at 26\u202f%, indicating a rise in unionist sentiment among those who voted against independence in 2014."
+  },
+  {
+    "query": "What were the results of the Baker Spartan volleyball team's homecoming matches?",
+    "relevant_doc_ids": [
+      128000
+    ],
+    "reference_answer": "The Spartans won both homecoming matches in straight sets: 25\u20116, 25\u201114, 25\u201113 against Lame Deer and 25\u20119, 25\u20116, 25\u20117 against Lodge Grass."
+  },
+  {
+    "query": "What was the purpose of Nigeria's Operation Crocodile Smile II?",
+    "relevant_doc_ids": [
+      132000
+    ],
+    "reference_answer": "The operation was designed to give troops the opportunity to sharpen their combat skills in land\u2011based and joint maritime operations, while emphasizing equipment maintenance, reconnaissance, inter\u2011service and inter\u2011agency cooperation, and to provide medical care, sanitation and school supplies to host communities."
+  },
+  {
+    "query": "How did students at Summit Street School commemorate veterans?",
+    "relevant_doc_ids": [
+      136000
+    ],
+    "reference_answer": "Students made poppy wall hangings and delivered them to veterans at the Burlington\u2011based Starr Farm Nursing Center, and they also performed a special dance during the assembly."
+  },
+  {
+    "query": "Who were the two visitors reported missing after a cave tour at Sequoia National Park?",
+    "relevant_doc_ids": [
+      140000
+    ],
+    "reference_answer": "The missing visitors were Jie Song and Yinan Wang."
+  },
+  {
+    "query": "Why were large employee buyouts offered at newspapers such as the Los Angeles Times and Baltimore Sun?",
+    "relevant_doc_ids": [
+      144000
+    ],
+    "reference_answer": "Large buyouts were offered to coax employees ready to retire to leave early, saving money for the paper and avoiding layoffs while keeping those who wanted to stay on the job."
+  },
+  {
+    "query": "What type of dining experience is recommended at the fresh-fish venue described in Miami?",
+    "relevant_doc_ids": [
+      148000
+    ],
+    "reference_answer": "A relaxing place for a fresh seafood dinner."
+  },
+  {
+    "query": "What disagreement about North Korea's nuclear activity is described in the article about the North Korea talks?",
+    "relevant_doc_ids": [
+      152000
+    ],
+    "reference_answer": "The article notes a disagreement: a report says North Korea will continue expanding its nuclear program \u201cbusiness as usual\u201d until directed otherwise, while former CIA analyst Bruce\u202fKlingner argues that this continued expansion is inconsistent with the regime\u2019s promises to abandon its nuclear weapons."
+  },
+  {
+    "query": "How did Jared Donaldson's underhand serve strategy compare with Michael Chang's famous strategy at the French Open?",
+    "relevant_doc_ids": [
+      156000
+    ],
+    "reference_answer": "Jared Donaldson used an underhand serve in a five\u2011setter but it did not win him the match, whereas Michael Chang\u2019s underhand serve in 1989 helped him win the French Open."
+  },
+  {
+    "query": "How many people were hospitalized after the chain-reaction crash in Plantation?",
+    "relevant_doc_ids": [
+      160000
+    ],
+    "reference_answer": "Nine people were hospitalized after the chain\u2011reaction crash in Plantation."
+  },
+  {
+    "query": "What fashion show featured models who were breast cancer survivors?",
+    "relevant_doc_ids": [
+      164000
+    ],
+    "reference_answer": "The flamboyant and emotional catwalk show that opened the triple bill in an arts space on the Lower East Side featured models who were breast cancer survivors."
+  },
+  {
+    "query": "What caused delays at Derby station and which train routes were affected?",
+    "relevant_doc_ids": [
+      168000
+    ],
+    "reference_answer": "The document does not mention Derby station."
+  },
+  {
+    "query": "Why was Jenna Russell initially concerned about taking over the role of Michelle?",
+    "relevant_doc_ids": [
+      172000
+    ],
+    "reference_answer": "Jenna Russell was initially concerned because the audience loved the previous actress and the character of Michelle was still an iconic figure in fans' minds, making it scary to step into that role."
+  },
+  {
+    "query": "What message did President Obama deliver to students according to the article?",
+    "relevant_doc_ids": [
+      176000
+    ],
+    "reference_answer": "The document does not mention President Obama."
+  },
+  {
+    "query": "Which players scored during Real Madrid's comeback described in the Champions League article?",
+    "relevant_doc_ids": [
+      180000
+    ],
+    "reference_answer": "Raul scored during Real Madrid's comeback."
+  },
+  {
+    "query": "How is the Irish rugby system helping reduce player injuries?",
+    "relevant_doc_ids": [
+      184000
+    ],
+    "reference_answer": "The Irish rugby system is reducing injuries by controlling the minutes players spend on the pitch and by employing the expertise of Nick Winkleman, the head of athletic performance and science."
+  },
+  {
+    "query": "What products and applications are included in the cardiac assist devices market analysis?",
+    "relevant_doc_ids": [
+      188000
+    ],
+    "reference_answer": "The analysis covers cardiac assist devices such as ventricular assist devices (VADs) and intra\u2011aortic balloon pumps (IABPs), and examines their use in hospitals, ambulatory settings and surgical centers, with both transcutaneous and implantable modalities."
+  },
+  {
+    "query": "What types of content does Facebook's policy prohibit or restrict according to the article?",
+    "relevant_doc_ids": [
+      192000
+    ],
+    "reference_answer": "Facebook\u2019s policy bans or restricts sexual imagery involving children, such as uncovered female nipples for children older than toddler\u2011age, and limits adult nudity and sexual activity, especially images of female breasts with nipples, defaulting to removal of any sexual content that could be non\u2011consensual or involve minors; these restrictions apply to real and digitally created images but not to artistic works."
+  },
+  {
+    "query": "What types of foods did nutritionists say they avoid keeping in their kitchens?",
+    "relevant_doc_ids": [
+      196000
+    ],
+    "reference_answer": "They avoid raw kale and other cruciferous vegetables."
+  }
 ]

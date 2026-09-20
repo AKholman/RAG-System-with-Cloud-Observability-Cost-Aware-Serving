@@ -1,0 +1,15 @@
+{
+  "num_completed_queries": 36,
+  "retrieval_latency_ms": {
+    "p50": 86.8,
+    "p95": 223.49
+  },
+  "llm_latency_ms": {
+    "p50": 18416.32,
+    "p95": 21258.24
+  },
+  "total_latency_ms": {
+    "p50": 18506.54,
+    "p95": 21346.11
+  }
+}

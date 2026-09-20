@@ -1,0 +1,458 @@
+{
+  "num_queries": 50,
+  "average_correctness": 1.38,
+  "average_faithfulness": 1.46,
+  "average_relevance": 1.5,
+  "results": [
+    {
+      "query": "How are Regina Willoughby and her 18-year-old daughter Melina connected through Columbia City Ballet?",
+      "generated_answer": "Regina Willoughby is a veteran dancer with Columbia City Ballet who is set to retire from the stage in March. Her daughter, 18\u2011year\u2011old Melina, is beginning her first season with the company as a trainee. For that one season, the two are connected by performing together in the same production\u2014Regina as the Snow Queen and Melina in the snow corps and other shared scenes\u2014making them both part of Columbia City Ballet at the same time.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Where did the 5.1 magnitude earthquake in Albania occur, and was any damage reported?",
+      "generated_answer": "The 5.1\u2011magnitude quake struck off western Albania, about 18\u202fkm (11\u202fmi) underground near Lalesi Bay\u2014roughly 30\u202fkm (18\u202fmi) west of Tirana.  No injuries or damage were reported.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "According to the UN report, what types of harm were children experiencing in conflicts?",
+      "generated_answer": "According to the UN report, children in conflict zones were suffering a range of violent harms, including:\n\n- **Recruitment as child soldiers** (being forced to fight)\n- **Killing and maiming** (death and serious injuries)\n- **Sexual violence** (rape, sexual abuse, and abduction)\n- **Attacks on places of learning and care** (schools and hospitals being bombed or targeted)\n\nThese actions were highlighted in the report\u2019s blacklist of parties that \u201crecruit, use, kill, maim, rape",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What prize does the winner of the airport love-story contest receive?",
+      "generated_answer": "The winner of the airport love\u2011story contest receives **$1,000 toward a romantic getaway**.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Why are environmentalists protesting Poland's plan to allow hunting of bison?",
+      "generated_answer": "Environmentalists are opposing Poland\u2019s proposal because they see it as an unnecessary and harmful action against a protected, iconic species. Bison are legally protected, live in old\u2011growth forests, and are a symbol of Poland\u2019s natural heritage. The authorities\u2019 justification \u2013 that the herd is too large, threatens tuberculosis, and that limited hunting would help fund its upkeep \u2013 is viewed by environmentalists as an excuse to allow killing of an important wildlife species for money rather than for genuine conservation.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 1,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "How many shooting scenes were connected to the gunman allegedly terrorizing drivers on Michigan highways?",
+      "generated_answer": "Four shooting scenes were linked to the gunman terrorizing drivers on Michigan highways.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What did Condoleezza Rice ask voters to do ahead of the special election?",
+      "generated_answer": "Condoleezza\u202fRice urged Alabamans to go to the polls and **reject Roy\u202fMoore**, telling voters to \u201ctake a stand for our core principles and for what is right,\u201d to reject \u201cbigotry, sexism and intolerance,\u201d and to cast their ballots in line with their values.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Who was ranked the top wide receiver in the Associated Press rankings?",
+      "generated_answer": "Antonio\u202fBrown.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What activities and groups were listed in the What's On listings for the Preston area?",
+      "generated_answer": "",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 0,
+        "relevance": 0
+      }
+    },
+    {
+      "query": "What alternative explanation did researchers give for the apparent link between antidepressant use during pregnancy and autism?",
+      "generated_answer": "The researchers suggested that the apparent association might actually reflect the underlying maternal mental illness itself\u2014rather than the antidepressants. In other words, the risk of autism could be linked to depression or other psychiatric disorders in the mother, with antidepressant use simply acting as a marker for that risk.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Which museum is described as a must-see institution in Sacramento?",
+      "generated_answer": "The museum described as a must\u2011see institution in Sacramento is **The Crocker**.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What historical events does the article Mental Walls identify as major turning points?",
+      "generated_answer": "**Major turning points highlighted in the \u201cMental Walls\u201d article**\n\n| Event | Why it\u2019s framed as a turning point | Key details from the article |\n|-------|-----------------------------------|------------------------------|\n| **Outbreak of World\u202fII (September\u202f1\u202f1939 \u2013 Hitler\u2019s invasion of Poland)** | Marks the end of the \u201cold world\u201d and the beginning of a new, drastically different global order, reshaping geopolitics and accelerating the breakup of colonial em",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 1
+      }
+    },
+    {
+      "query": "What was the starting price mentioned for the McLaren GTR at the Geneva Auto Show?",
+      "generated_answer": "The McLaren GTR was noted as having a starting price of **one\u202fmillion pounds (about\u202f$1.4\u202fmillion)**, not including tax.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What type of special intervention program does the article propose for areas affected by insurgency?",
+      "generated_answer": "The article calls for an **ad\u2011hoc, non\u2011legislated special intervention program focused on comprehensive socio\u2011economic recovery**. It would bring together resources from domestic and international donor agencies, development partners, and governments to rebuild the affected areas without creating a permanent, law\u2011enforced structure.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What does Manish Uniyal discuss regarding the Nigerian economy and consumer value?",
+      "generated_answer": "Manish\u202fUniyal, the managing director of Euro\u202fGlobal\u202fFoods and\u202fDistilleries, emphasizes that the Nigerian economy will better serve consumers only if the country overcomes its manufacturing bottlenecks. He argues that by tackling these production challenges, his company\u2014and the broader industrial sector\u2014can add more value to consumer goods, thereby giving Nigerians greater value for their money.",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 1
+      }
+    },
+    {
+      "query": "How many players were on the Palmerton football team's roster?",
+      "generated_answer": "The passage does not give a specific headcount for the Palmerton team. It only says that the roster is \u201cnot that many\u201d this season, but no exact number is mentioned.",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 0,
+        "relevance": 0
+      }
+    },
+    {
+      "query": "What controversy involving Jagmeet Singh is discussed in the editorial?",
+      "generated_answer": "The editorial focuses on the controversy that Jagmeet\u202fSingh had once taken part in public rallies that supported the Sikh separatist (Khalistani) movement in India and did not unequivocally reject or condemn the use of violence in that context. This past activity \u2013 including a UK rally where a speaker called political violence a \u201clegitimate form of resistance\u201d and a California commemoration that celebrated Sikh separatism \u2013 has drawn criticism that he has failed to take a clear stance on Indian unity and has risked straining Canada\u2011India relations.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Who did David Goffin defeat in the second round of the Barcelona Open?",
+      "generated_answer": "David Goffin defeated **Marcel Granollers** in the second round of the Barcelona Open.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What is the premise of the alternate-history drama SS-GB?",
+      "generated_answer": "SS\u2011GB is a dystopian alternate\u2011history drama set in 1941 after Britain has lost the Battle of Britain. England and Wales are under Nazi occupation, and the story follows British detective Douglas Archer, who is coerced into working for the SS in occupied London. As tensions rise following the murder of a German pilot by a Resistance fighter, Archer is drawn into a perilous investigation that forces him to confront the dilemma of maintaining law and order while fighting against fascism\u2014and to decide how far he will risk his own conscience in the struggle.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What information was reported about the man accused of shooting a congressman and his political activities?",
+      "generated_answer": "The suspect was identified as **James\u202fT. Hodgkinson**, a 66\u2011year\u2011old resident of Belleville, Illinois.  He is reported to have fired a rifle and handgun at a congressional baseball practice in Alexandria, Virginia, and was later shot by police.  According to a statement released by U.S. Sen. Bernie\u202fSanders, Hodgkinson had \u201capparently volunteered\u201d on Sanders\u2019s 2016 presidential campaign, indicating the man\u2019s involvement in that political activity.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Why is the Honda S2000 remembered positively in the article about resurrected cars?",
+      "generated_answer": "The Honda\u202fS2000 is remembered as a standout example of Honda\u2019s best work \u2013 a high\u2011performance sports car that delivered pure driving pleasure, clean handling, and reliability, all without over\u2011engineering or heavy reliance on technology. In short, it was praised as a fun, dependable, and \u201cHonda\u2011at\u2011its\u2011best\u201d car that still feels like a classic even though it wasn\u2019t based on a Civic platform.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What was the tax filing deadline mentioned in the article, and what could taxpayers do if they missed it?",
+      "generated_answer": "The filing deadline was **April\u202f18**.  \nIf a taxpayer missed that date, they could **file an extension (Form\u202f4868) to give them an additional six months\u2014until October\u202f16\u2014to submit their return (and, if needed, set up a payment plan).**",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What did Adam Schiff say about the FISA warrant application discussed in the Nunes memo controversy?",
+      "generated_answer": "Adam\u202fSchiff said the Nunes memo\u2019s accusations about the FISA warrant on former Trump campaign adviser Carter\u202fPage were \u201ccompletely false.\u201d He argued that the FBI had \u201cgood reason\u201d to be concerned about Page and that the warrant was a legitimate response to that concern. In short, Schiff maintained that the FISA application was justified and that the memo\u2019s claim that the FBI and DOJ \u201ccorruptly sought a FISA warrant \u2026 and deliberately misled the court\u201d was a fabrication.",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 1
+      }
+    },
+    {
+      "query": "What was the Treasury Department's analysis described in the article about?",
+      "generated_answer": "The Treasury\u2019s analysis was a fiscal\u2010impact study of the new tax bill being drafted by Congress. It",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 1
+      }
+    },
+    {
+      "query": "What happened to the pistol and other belongings after the bar shooting described in the article?",
+      "generated_answer": "",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 0,
+        "relevance": 0
+      }
+    },
+    {
+      "query": "How did Jason Corbett's brother describe him and his family's experience during the court proceedings?",
+      "generated_answer": "He said his brother Jason was a \u201c6\u20112\u202fteddybear who wouldn\u2019t hurt a fly,\u201d and that his family had \u201cendured all the horror in the court for four weeks, yet held their dignity and composure in the face of pure evil.\u201d  He added that they hoped the U.S. justice system would ultimately see through \u201ctheir total remorseless lies.\u201d",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What did Ben Davies say about Ryan Giggs giving young players opportunities for Wales?",
+      "generated_answer": "Ben\u202fDavies applauded Giggs for trusting the youngsters: \u201cThe manager has put faith in people who have done well on the training pitch, and that\u2019s right,\u201d he said. \u201cThe boys that came in did excellently and it\u2019s something to build on.\u201d",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Why was Matt Forte considered unlikely to be traded before the trade deadline?",
+      "generated_answer": "Matt Forte was seen as an unlikely trade piece before the deadline mainly because of his injury status and recent production. The reports highlighted a lingering turf\u2011toe problem that could keep him from reaching full\u2011capacity before the trade\u2011deadline cut\u2011off. Even if he was healthy, his recent numbers were a far cry from his career best \u2013 he had just 813 rushing yards in his first season with the Jets, the lowest of his career \u2013 and he hadn\u2019t been particularly impressive when he did play. With the Vikings already filling their RB slot by signing a cheaper free\u2011agent (Stevan\u202fRidley) and other teams preferring more affordable, upside options, there was little incentive to trade Forte when a key injury and lackluster performance made him a low\u2011value asset.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What did Donald Trump say about the resignation of the Black CEO from his manufacturing council?",
+      "generated_answer": "Donald\u202fTrump reacted on Twitter, saying that Frazier\u2019s resignation would \u201cgive him more time to LOWER RIPOFF DRUG PRICES!\u201d",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Which Golden State Warriors players and roster decisions are discussed in the article about their championship run?",
+      "generated_answer": "**Players mentioned**\n\n| Player | Role / Context in the article |\n|--------|------------------------------|\n| **Kevin\u202fDurant** | Signed a two\u2011year deal with an opt\u2011out; took a $9\u202fmillion pay cut to help the Warriors keep key teammates.  He talks about staying with the franchise, potentially accepting less money to aid in re\u2011signing Iguodala or Livingston. |\n| **Stephen\u202fCurry** | Unrestricted free\u2011agent this summer; a \u201cbiggest bargain\u201d who could sign the richest contract (>$200\u202fmillion).  The Warriors\u2019 owner and GM are \u201call\u2011in\u201d on getting him back, saying they\u2019ll do whatever it takes. |\n| **Draymond\u202fGreen** | Listed among the core players",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 2,
+        "relevance": 0
+      }
+    },
+    {
+      "query": "What did Jordan Hamlett plead guilty to doing with Donald Trump's Social Security number?",
+      "generated_answer": "Jordan Hamlett pleaded guilty to **false representation of Donald\u202fTrump\u2019s Social Security number** in order to gain access to Trump\u2019s federal tax information. He used the number to open an online application for federal student aid and then attempted, six times, to retrieve Trump\u2019s tax data from the IRS through its data\u2011retrieval tool.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What did recent Scottish polling suggest about support for the SNP and Scottish independence?",
+      "generated_answer": "Recent polls paint a picture in which the SNP remains the dominant force in Scottish politics, but the prospect of a second independence referendum is mixed.\n\n**SNP support**\n\n| Poll / Source | SNP support reported |\n|---------------|---------------------|\n| YouGov (general\u2011election context) | 47\u202f% of respondents say they would vote SNP in a forthcoming general election |\n| \u201cWhat Scotland Thinks\u201d (2025) | SNP holds 56 seats out of 59 in 2015, and polling now keeps the party ahead (\u224843\u202f% in a Survation poll, 56\u202f% of seats in 2015) |\n| Panelbase/Wings Over Scotland | SNP still leading, with the Scottish Conservatives polling at 26\u202f% and Labour at ~15\u202f% |\n\nThese figures suggest the SNP still enjoys broad support and is likely to win the next local and possibly national elections.\n\n**Independence sentiment**\n\n| Poll / Source | Key finding |\n|---------------|-------------|\n| YouGov (June 2018 timetable) | 49\u202f% of Scots oppose a referendum held between autumn\u202f2018 and spring\u202f2019 (the timetable Sturgeon proposed); 37\u202f% support that timetable; 14\u202f% are undecided. |\n| YouGov (EU\u2011remain vs. independence) | 14\u202f% of voters who supported \u201cRemain\u201d and \u201cNo\u201d (i.e., voted to stay in the EU but against independence) are now undecided on the independence question for a future referendum. |\n| Kantar (general sentiment) | \u201cMost Scottish voters do not want another referendum.\u201d |\n| \u201cWhat Scotland Thinks\u201d (post\u2011Brexit) | Despite an early surge, Scots do not appear markedly more eager for independence after the 2016 EU vote. |\n\n**Bottom line**\n\n* The SNP remains the largest party in Scotland and is likely to stay that way in the next election cycle.  \n* However, while a sizable chunk of the electorate",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What were the results of the Baker Spartan volleyball team's homecoming matches?",
+      "generated_answer": "The Baker Spartan volleyball team swept both of its home\u2011coming matches:\n\n- **Against Lame Deer Morning Stars** \u2013 3\u202fsets to 0 (25\u20116, 25\u201114, 25\u201113).  \n- **Against Lodge Grass Indians** \u2013 3\u202fsets to 0 (25\u20119, 25\u20116, 25\u20117).  \n\nThey earned two conference victories, ending the home\u2011coming week on a high note.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What was the purpose of Nigeria's Operation Crocodile Smile II?",
+      "generated_answer": "The Nigerian Army\u2019s \u201cOperation\u202fCrocodile\u202fSmile\u202fII\u201d was launched primarily as a training exercise designed to sharpen the combat readiness of soldiers in both land\u2011based and joint maritime operations.  \nAt the same time, the operation was meant to:\n\n* Emphasise equipment maintenance, reconnaissance, inter\u2011service and inter\u2011agency coordination, and the proper application of the Army Code.  \n* Make the troops \u201crelevant to their area of responsibility\u201d in the Niger Delta states.  \n* Provide community\u2011service activities such as medical care for host communities, quick\u2011impact projects, sanitation drives, and distribution of materials to schools.\n\nIn short, the operation aimed to improve tactical and operational skills of the Army while simultaneously engaging in humanitarian and development work within the Niger Delta region.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "How did students at Summit Street School commemorate veterans?",
+      "generated_answer": "The students at Summit Street School honored veterans in a multi\u2011stage project that culminated in a Memorial Day assembly. They:\n\n1. **Learned and taught** \u2013 The kindergarten class studied what Memorial Day means and what veterans do, and the students shared that knowledge with classmates and community members.  \n2. **Created art and service items** \u2013 They painted portraits of service dogs and made dog toys, and the class also produced a final video of their work.  \n3. **Performed a special dance** \u2013 At the assembly they performed a choreographed routine to celebrate the holiday.  \n4. **Changed flags at veteran graves** \u2013 Together with other classes, they went into the village cemetery and Fairview cemetery to replace flags on all the veteran headstones, including that of Mrs. Mahoney\u2019s father.  \n5. **Hosted veterans and visitors** \u2013 Four veterans from Vermont Paws and Boots came to the classroom to talk about service dogs, the military, and their own experiences, and students interacted with them and their dogs (e.g., Joe\u2019s dog Emma).  \n6. **Participated in ceremony traditions** \u2013 The assembly included laying wreaths, posting colors and flags, singing the national anthem, honoring Gold Star families, and receiving a word from guest speaker Bob\u202fHaley.\n\nThrough these activities the students demonstrated appreciation for veterans, learned about their sacrifices, and engaged in meaningful community service.",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Who were the two visitors reported missing after a cave tour at Sequoia National Park?",
+      "generated_answer": "The missing visitors were **Jie Song** and **Yinan Wang**.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Why were large employee buyouts offered at newspapers such as the Los Angeles Times and Baltimore Sun?",
+      "generated_answer": "Large\u2011scale buyout offers at papers like the Los\u202fAngeles\u202fTimes and the Baltimore\u202fSun were largely a cost\u2011cutting, restructuring move prompted by a sharp decline in print",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 1
+      }
+    },
+    {
+      "query": "What type of dining experience is recommended at the fresh-fish venue described in Miami?",
+      "generated_answer": "The venue recommends a casual, on\u2011site fish\u2011market dining experience: you can have fresh fish filleted, cut, and even cooked right there, and then enjoy accompaniments such as the handmade smoked\u2011salmon dip, fish bread",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 1,
+        "relevance": 0
+      }
+    },
+    {
+      "query": "What disagreement about North Korea's nuclear activity is described in the article about the North Korea talks?",
+      "generated_answer": "",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 0,
+        "relevance": 0
+      }
+    },
+    {
+      "query": "How did Jared Donaldson's underhand serve strategy compare with Michael Chang's famous strategy at the French Open?",
+      "generated_answer": "Jared\u202fDonaldson\u2019s underhand serve was a throw\u2011back to the same trick that Michael\u202fChang famously used at Roland\u2011Garros, but it came in a very different context.  \n\n* **Same basic idea** \u2013 Both players employed an underhand service motion to catch their opponent off\u2011guard and gain a psychological edge.  \n\n* **Different circumstances** \u2013  \n  *\u202fChang used the move in the fourth round of the 1988 French Open while he was cramping and fighting for a place in the title\u2011winning run, turning it into a key tactical weapon that helped him capture the championship.  \n  *\u202fDonaldson, in his match against Dimitrov, tried the underhand serve as a surprise tactic when he was already exhausted, using it at 6\u2011all, 40\u201130 to hold a set point and again later in the match. It was not the decisive play that won the match, but a \u201ccheeky\u201d way to try to unbalance his opponent.  \n\nSo, both players used the same unusual serve, but Chang\u2019s was a decisive, historic moment in a title\u2011winning campaign, while Donaldson\u2019s was a tactical, short\u2011term surprise in a match\u2011ending situation.",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "How many people were hospitalized after the chain-reaction crash in Plantation?",
+      "generated_answer": "Nine people were hospitalized after the chain\u2011reaction crash in Plantation.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What fashion show featured models who were breast cancer survivors?",
+      "generated_answer": "The event was the **\u201cSurviving in Fashion\u201d** catwalk show, organized by YES! and SMGlobal Catwalk, where the models were breast\u2011cancer survivors.",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What caused delays at Derby station and which train routes were affected?",
+      "generated_answer": "Delays at Derby Station were caused by a **train\u2011incident near Kettering** \u2013 a person was struck by a train, the line was temporarily closed for emergency crews and the driver was relieved.\n\nThe incident disrupted several routes, including:\n\n| Service | Route affected | Notes |\n|---------|----------------|-------|\n| East Midlands Trains | **Derby \u2192 London St Pancras International** (7:01\u202fpm, 7:21\u202fpm, 8:01\u202fpm) | Delayed by up to 47\u202fminutes, later trains returned to schedule |\n| East Midlands Trains | **Derby \u2194 Chesterfield** (and the longer route to Sheffield) | Trains could not run in either direction between the two stations; diverted via Doncaster |\n| Other operators | **Derby\u2011London via other lines** | Chiltern Railways, CrossCountry, Great Western, and Virgin Trains also reported delays on their services through the affected corridor |\n\nThus, the incident near Kettering caused the delays, and the routes between Derby and London, Derby and Chesterfield (and by extension to Sheffield), as well as the broader services operated by Chiltern, CrossCountry, Great Western, and Virgin Trains, were all impacted.",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 0,
+        "relevance": 0
+      }
+    },
+    {
+      "query": "Why was Jenna Russell initially concerned about taking over the role of Michelle?",
+      "generated_answer": "Jenna Russell was initially worried because she knew Michelle Fowler was an iconic, long\u2011running character that the audience loved, especially the version played by Susan\u202fTully. Stepping into \u201cTully\u2019s shoes\u201d felt scary to her, as she feared the viewers\u2019 attachment to the original portrayal.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What message did President Obama deliver to students according to the article?",
+      "generated_answer": "According to the article, President Obama urged students to **set ambitious goals and work as hard as they can**. He emphasized that they must focus on their studies, persevere through the many challenges they face outside the classroom, and understand that they are the nation\u2019s future. In short, he encouraged them to buckle down, strive for excellence, and pursue their education with determination.",
+      "scores": {
+        "correctness": 2,
+        "faithfulness": 2,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "Which players scored during Real Madrid's comeback described in the Champions League article?",
+      "generated_answer": "",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 0,
+        "relevance": 0
+      }
+    },
+    {
+      "query": "How is the Irish rugby system helping reduce player injuries?",
+      "generated_answer": "**Irish rugby\u2019s injury\u2011prevention blueprint**\n\n| What the system does | How it cuts injury risk |\n|---------------------|------------------------|\n| **Centralised data \u201cpassport\u201d** \u2013 every player is tracked from age\u202f23 (or earlier) through 7\u20138 years of GPS, workload, injury and rehab data. | Gives medical, coaching and analytics teams a detailed, player\u2011specific history so they can spot patterns, adjust training loads and predict where an injury might first appear. |\n| **Head of Athletic Performance & Science (Nick\u202fWinkleman)** \u2013 recruited from elite U.S. sport to standardise performance protocols across all provinces. | Unifies training methods, introduces modern recovery tech, and ensures every club applies the same injury\u2011prevention science. |\n| **GPS & workload monitoring** \u2013 real\u2011time speed, distance, impact,",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 2
+      }
+    },
+    {
+      "query": "What products and applications are included in the cardiac assist devices market analysis?",
+      "generated_answer": "**Products covered in the analysis**\n\n| Product Category | Specific Devices Mentioned |\n|------------------|---------------------------|\n| **Ventricular Assist Devices (VADs)** | Right\u2011ventricular assist device (RVAD)  <br> Left\u2011ventricular assist device (LVAD) <br> Biventricular assist device (BIVAD) |\n| **Intra\u2011Aortic Balloon Pump (IABP)** | Intra\u2011aortic inflatable pump (IABP) \u2013 a computer\u2011aided device that improves myocardial oxygen perfusion and cardiac output |\n| **Total Artificial Heart** | Mechanical pump that replaces both ventricles and functions as a complete artificial heart |\n\n*The report also distinguishes the devices by **modality** \u2013\u202ftranscutaneous vs. implant",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 1
+      }
+    },
+    {
+      "query": "What types of content does Facebook's policy prohibit or restrict according to the article?",
+      "generated_answer": "According to the article, Facebook\u2019s new Community Standards prohibit or restrict a wide range of content, including:  \n\n| Category | Specific prohibitions or restrictions |\n|----------|---------------------------------------|\n| **Drug\u2011related content** | \u2022 Posts that **admit personal non\u2011medical drug use**.<br>\u2022 Any content that **promotes, advertises, or sells prescription drugs, marijuana, or firearms**.<br>\u2022 Advertising that encourages drug use. |\n| **Sex\u2011work & sexual content** |",
+      "scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "relevance": 1
+      }
+    },
+    {
+      "query": "What types of foods did nutritionists say they avoid keeping in their kitchens?",
+      "generated_answer": "",
+      "scores": {
+        "correctness": 0,
+        "faithfulness": 0,
+        "relevance": 0
+      }
+    }
+  ]
+}
