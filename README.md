@@ -131,10 +131,9 @@ The API loads `faiss.index` and `metadata.json` from S3 when the service starts.
 
 CloudWatch custom metrics track retrieval latency, LLM latency, total latency, and token usage.
 
----
-
-## Evaluation
-
+========================================================
+## Evaluation  (offline)
+========================================================
 The system was evaluated across **retrieval quality, generation quality, and production latency**.
 
 ### Retrieval
@@ -153,7 +152,6 @@ The system was evaluated across **retrieval quality, generation quality, and pro
 The RAG answers were evaluated by a separate LLM judge using `qwen/qwen3.8-27b`.
 
 Three-level scoring:
-
 * **0** — incorrect / unsupported / irrelevant
 * **1** — partially correct / supported / relevant
 * **2** — fully correct / supported / relevant
@@ -161,7 +159,7 @@ Three-level scoring:
 | Metric       |   Result |
 | ------------ | -------: |
 | Correctness  | 1.38 / 2 |
-| Faithfulness | 1.46 / 2 |
+| Faithfulness | 1.46 / 2 |         # To check hallucination
 | Relevance    | 1.50 / 2 |
 
 ### Performance
@@ -181,89 +179,6 @@ Measured on the deployed EC2 inference service:
 The retrieval and generation benchmarks contain 50 questions mapped to known relevant documents in the evaluation corpus. This provides a reproducible benchmark but does not fully represent open-ended production traffic, such as differently phrased questions, multi-document questions, or questions with no answer in the corpus.
 
 Performance testing included 36 completed queries because the external LLM API quota was reached during the 50-query test.
-
----
-
-## Repository Structure
-
-```text
-RAG_2/
-├── app/
-│   ├── main.py
-│   ├── retrieval.py
-│   ├── s3_loader.py
-│   ├── groq_client.py
-│   └── logger.py
-│
-├── evaluation/
-│   ├── run_eval.py
-│   ├── retrieval/
-│   │   └── eval_retrieval.py
-│   ├── generation/
-│   │   ├── eval_generation.py
-│   │   └── judge_generation.py
-│   ├── performance/
-│   │   └── eval_performance_from_logs.py
-│   ├── data/
-│   │   ├── eval_queries.json
-│   │   ├── eval_documents.json
-│   │   └── generated_answers.json
-│   └── reports/
-│       ├── retrieval_metrics.json
-│       ├── generation_metrics.json
-│       └── performance_metrics.json
-│
-├── artifacts/
-│   ├── faiss.index
-│   └── metadata.json
-│
-├── logs/
-│   └── app.log
-│
-├── requirements.txt
-└── README.md
-```
-
-## Running the API
-
-### 1. Connect to EC2
-
-```bash
-chmod 400 ~/.ssh/rag2-ec2-key.pem
-
-ssh -i ~/.ssh/rag2-ec2-key.pem ubuntu@YOUR_EC2_PUBLIC_IP
-```
-
-### 2. Activate the environment
-
-```bash
-cd ~/RAG_2
-source ~/rag-env/bin/activate
-```
-
-### 3. Set the Groq API key
-
-```bash
-export GROQ_API_KEY="YOUR_GROQ_KEY"
-```
-
-Verify without printing the full key:
-
-```bash
-echo ${GROQ_API_KEY:0:8}
-```
-
-### 4. Start the API
-
-```bash
-uvicorn app.main:app --host 0.0.0.0 --port 8000
-```
-
-The API exposes:
-
-```text
-POST /query
-```
 
 ---
 
