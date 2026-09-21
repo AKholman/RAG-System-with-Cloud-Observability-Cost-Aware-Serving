@@ -108,9 +108,6 @@ Final Answer
 
 The API loads `faiss.index` and `metadata.json` from S3 when the service starts.
 
----
-
-## AWS & Observability
 
 ### AWS Components
 
@@ -118,7 +115,9 @@ The API loads `faiss.index` and `metadata.json` from S3 when the service starts.
 * **S3** — FAISS index and metadata storage
 * **CloudWatch** — application performance metrics
 
-### Application Logging
+==================================================================
+### Application Logging & Cloudwatch - monitoring and observation
+==================================================================
 
 `app.log` records:
 
